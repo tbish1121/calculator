@@ -10,17 +10,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: black;
 }
 
 .calculator {
     width: 500px;
-    height: 500px;
+    height: 100%;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr)
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    height: 100%;
 }
 
 .grid-container :first-child {
@@ -28,13 +30,23 @@ body {
 }
 
 button {
-    height: 50px;
+    height: 100%;
+    font-size: 1.6rem;
+}
+
+.operator {
+    background: orange;
+}
+
+.number {
+    background: darkslategray;
 }
 
 .display {
-    background: black;
-    color: white;
-    height: 50px;
+    background: white;
+    color: black;
+    height: 100%;
+    width: 100%;
     font-size: 1.6rem;
     display: flex;
     justify-content: center;

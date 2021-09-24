@@ -33,9 +33,9 @@ function calc() {
 for(let i = 0; i < buttons.length; i++) {
     if(buttons[i].innerHTML == '=') {
         buttons[i].addEventListener('click', calc());
-    } else {
+    } else if(buttons[i].innerHTML.toLowerCase() == 'c') {
+        buttons[i].addEventListener('click', clearDisplay);
+    } else if(buttons[i].innerHTML) {
         buttons[i].addEventListener('click', add(i))
-    }
+    } 
 }
-
-clear.addEventListener('click', clearDisplay)
