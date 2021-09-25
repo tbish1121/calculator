@@ -10,28 +10,28 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: black;
+    background: rgb(54, 46, 46);
 }
 
 .calculator {
     width: 500px;
-    height: 100%;
+
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    height: 100%;
+
 }
 
-.grid-container :first-child {
+.grid-container :first-child, .grid-container :last-child {
     grid-column: 1 / -1;
 }
 
 button {
-    height: 100%;
     font-size: 1.6rem;
+    height: 50px;
 }
 
 .operator {
